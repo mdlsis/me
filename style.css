@@ -1,28 +1,6 @@
 body {
     color: #fff;
     background: #1a1d23;
-    /* overflow-x: hidden */
-}
-
-@media (min-width:768px) {
-    body {
-        line-height: 4.3vmin;
-        font-size: 4vmin
-    }
-}
-
-.clear:before,
-.clear:after {
-    content: " ";
-    display: table
-}
-
-.clear:after {
-    clear: both
-}
-
-.clear {
-    *zoom: 1
 }
 
 a {
@@ -84,15 +62,6 @@ sup {
     width: 100%;
 }
 
-@media (max-width:1280px) {
-    .header {
-        display: block;
-        position: relative;
-        width: auto;
-        padding: 0;
-        background: none
-    }
-}
 
 .header p {
     margin: 0
@@ -111,20 +80,6 @@ sup {
     color: #e72f5f;
     /* line-height: 6.3vmin;
     font-size: 6vmin */
-}
-
-@media (min-width:768px) {
-    .header .info-left h1 {
-        line-height: 4.3vmin;
-        font-size: 4vmin
-    }
-}
-
-@media (max-width:1280px) {
-    .header .info-left {
-        width: 100%;
-        margin-bottom: 30px
-    }
 }
 
 .header .info-right {
@@ -147,36 +102,12 @@ sup {
     color: #585858
 }
 
-@media (max-width:1280px) {
-    .header .info-right {
-        float: none
-    }
-}
-
 .code-editor {
-    padding-top: 17.2vmin
-}
-
-@media (max-width:1280px) {
-    .code-editor {
-        padding-top: inherit
-    }
+    padding-top: 27vmin
 }
 
 .code-editor .block {
-    margin-top: 13vh
-}
-
-@media (max-width:767px) {
-    .code-editor .block {
-        margin-top: 60px
-    }
-}
-
-@media (max-width:767px) {
-    .code-editor .code-block {
-        margin-left: -30px
-    }
+    margin-top: 7vh
 }
 
 .code-editor .code-block h2 {
@@ -187,35 +118,8 @@ sup {
     margin-bottom: 4.78vh
 }
 
-@media (min-width:768px) {
-    .code-editor .code-block h2 {
-        line-height: 4.3vmin;
-        font-size: 4vmin
-    }
-}
-
-@media (max-width:767px) {
-    .code-part {
-        margin-bottom: 3px
-    }
-}
-
-@media (max-width:767px) and (orientation:portrait) {
-    .code-part {
-        margin-bottom: 15px;
-        margin-left: 0
-    }
-}
-
 .code-part:last-child {
     margin-bottom: 0
-}
-
-@media (max-width:767px) and (orientation:portrait) {
-    .code-part .message {
-        display: block;
-        padding-left: 0
-    }
 }
 
 .badge {
@@ -506,16 +410,6 @@ i.fa-at {
     cursor: pointer;
 }
 
-@media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: .938rem;
-    }
-
-    .sidenav .icon-container a {
-        font-size: 1.125rem;
-    }
-}
-
 /* Code Editor Tab */
 .code-editor-tab {
     height: 2.5rem;
@@ -675,9 +569,6 @@ nav li:hover>ul {
     And Simple browser terminal view with css (Ali Davut)
     https://codepen.io/alidavut/pen/OXzxOO
 */
-
-/* background-color: #272727; */
-/* background-color: #151515; */
 
 .window {
     display: none;
@@ -951,7 +842,7 @@ nav li:hover>ul {
     transition: opacity 400ms;
 }
 
-/* Pulse Button */
+/* Pulse button sidebar */
 .icon-container .pulse-button {
 	position: relative;
     top: -1rem;
@@ -1020,4 +911,277 @@ nav li:hover>ul {
 		opacity: 0;
 	}
 }
+
+/* Pulse button status bar */
+.fa-beat {
+    -webkit-animation: fa-beat 1s infinite linear;
+    animation: fa-beat 1s infinite linear;
+}
+@-webkit-keyframes fa-beat {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@keyframes fa-beat {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
 /* End Pulse Button */
+
+
+/* 
+  Media queries 
+*/
+@media (max-width: 450px) {
+    
+    .header .info-right {
+        margin-right: 3rem;
+        width: unset;
+    }
+
+    .container-editor {
+        padding-left: 2.8rem;
+    }
+    
+    .code-editor-menu {
+        padding: 0;
+        margin-left: -1rem;
+        font-size: .7rem;
+    }
+    
+    ul {
+        padding-inline-start: 5px;
+    }
+
+    nav li {
+        padding: 0.113rem .226rem;
+
+    }
+
+    i.fab.fa-github.fa-2x {
+        font-size: 1em;
+    }
+
+    .code-part .line-number {
+        width: 1.8rem;
+    }
+
+    .expand {
+        margin-left: 0!important;
+        width: .5rem;
+    }
+
+    .expand-select {
+        margin-left: -.5rem;
+    }
+
+    .code-part .comment {
+        margin-left: 0!important;
+    }
+
+    .code-part .using {
+        margin-left: 0;
+    }
+  
+    .code-part .namespace {
+        margin-left: 0;
+    }
+    
+    .code-part .class {
+        margin-left: 1.5rem;
+    }
+    
+    .code-part .method {
+        margin-left: 2rem;
+    }
+    
+    .code-part .code-i1 {
+        margin-left: 2.5rem;
+    }
+    
+    .code-part .code-i2 {
+        margin-left: 3rem;
+    }
+
+    .ide-message-area {
+        display: none!important;
+    }
+
+    .window {
+        top: 15rem;
+        right: .5rem;
+        margin: 0 auto;
+        position: fixed;
+        width: 300px;
+        height: 240px;
+    }
+    
+    .window-title {
+        font-size: 12px;
+    }
+    
+    .window-menu {
+        top: -2px;
+        right: 8px;
+    }
+
+    .terminal {
+        margin: 10px;
+        font-size: 11px;
+    }
+
+    .terminal p {
+        margin-top: 0;
+        margin-bottom: 0.5rem
+    }
+    
+}
+
+@media (max-width:767px) {
+    .header .info-left {
+        width: 40%;
+    }
+
+    .header .info-left h1 {
+        font-size: medium;
+    }
+
+    .header .info-right {
+        float: right;
+        margin-right: 3.5rem;
+        margin-top: -3rem;
+    }
+    
+    .header p {
+        margin: 0;
+        font-size: 70%;
+    }
+
+    .header {
+        margin-left: -1rem;
+    }
+
+    .code-editor {
+        padding-top: 30.8vmin;        
+    }
+
+    .code-editor .block {
+        margin-top: 26vh;
+    }
+
+    /* .expand {
+        margin-left: .5rem;
+    } */
+    
+    .code-part .comment {
+        margin-left: 1rem;
+    }
+
+    .code-part .using {
+        margin-left: 1rem;
+    }
+  
+    .code-part .namespace {
+        margin-left: 1rem;
+    }
+    
+    .code-part .class {
+        margin-left: 2rem;
+    }
+    
+    .code-part .method {
+        margin-left: 3rem;
+    }
+    
+    .code-part .code-i1 {
+        margin-left: 4rem;
+    }
+    
+    .code-part .code-i2 {
+        margin-left: 5rem;
+    }
+
+    /* Sidebar */
+    .sidenav {
+        width: 2.8rem;
+    }
+
+    .sidenav .icon-container {
+        padding-top: 18rem;
+    }
+   
+}
+
+@media (min-width:768px) {
+    body {
+        line-height: 4.3vmin;
+        font-size: 4vmin
+    }
+    .header .info-right {
+        float: right;
+        margin-right: 5rem;
+        margin-top: -6rem;
+        width: 30%;
+        font-size: 1.5rem;
+    }
+
+    .code-editor .block {
+        margin-top: 7vh
+    }
+
+}
+
+@media (min-width:768px) and (max-width:1279px) {
+    .code-editor .block {
+        margin-top: 0;
+    }
+
+    .sidenav .icon-container {
+        padding-top: 18rem;
+        font-size: 2rem;
+    }
+
+    .badge {
+        padding: .2rem;
+        margin-left: 1.5rem;
+        font-size: 18px;
+    }
+
+}
+
+@media (min-width:1024px) and (max-width:1279px) {
+    .code-part .line-number {
+        width: 3rem;
+    }
+
+    .code-editor .block {
+        margin-top: -10px!important;
+    }
+}
+
+@media (max-width:1280px) {
+
+    .code-editor .block {
+        margin-top: 2.8vh
+    }
+
+}

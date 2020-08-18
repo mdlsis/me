@@ -1,2 +1,2 @@
 # me
-My contact info!
+My contact info

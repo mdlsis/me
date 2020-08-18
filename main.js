@@ -1,4 +1,11 @@
 /*  
+
+    main.js
+    (2020) M Daniel Lana
+
+    Credits and references:
+    -----------------------
+
     Status progress bar
         Credit: https://codepen.io/Boogiesox/pen/MYbWrj
     
@@ -10,11 +17,12 @@
 
 'option strict';
 
-// Retrieve elements
-var btnFixCode = document.querySelector('.btnFixCode');
-var btnRunCode = document.querySelector('.btnRunCode');
-var terminalWin = document.querySelector('.window');
-var winButtons = document.querySelector('.window-menu');
+// Get elements
+var btnFixCode = document.querySelector('.btnFixCode'),
+    btnRunCode = document.querySelector('.btnRunCode'),
+    btnRefresh = document.querySelector('.btnRefresh'),
+    terminalWin = document.querySelector('.window'),
+    winButtons = document.querySelector('.window-menu');
 
 // Commands and logs
 var commands = document.querySelectorAll('.terminal p'),
@@ -43,11 +51,14 @@ function statusBarInfoDraw() {
 
         let sbwarning = document.querySelector('.sb-stats-warnings');
         let sberrors = document.querySelector('.sb-stats-errors');
+        let sbrefresh = document.querySelector('.sb-refresh i');
         pbar.className += ' done';
         sbpercent.innerHTML = 'Done! Found 3 problems.';
         sbwarning.innerHTML = '2';
         sberrors.innerHTML = '1';
-    
+        // Add pulse effect to sbar button refresh
+        sbrefresh.classList.add('fa-beat');
+
     }
 };
 
@@ -96,7 +107,7 @@ window.addEventListener('load', function () {
     statusBarInfoDraw();
 
     // runcode button click
-    btnRunCode.onclick = function (e) {
+    btnRunCode.onclick = function(e) {
         e.preventDefault;
         fadeIn(terminalWin, 1000);
         resetAnimation(terminalWin, 'command');
@@ -121,8 +132,7 @@ window.addEventListener('load', function () {
                 'Phone: 54930641816<br>' +
                 'Email: mdlsis|gmail|com<br>' +
                 'Linkedin: https://www.linkedin.com/in/mdlana/<br>' +
-                'WebSite: https://www.mdlsis.com.ar/<br><br>' +
-                'Press Enter Key to Exit...';
+                'WebSite: https://www.mdlsis.com.ar/<br><br>';
             commands[2].innerHTML = 'Running program finished ok!';
             cfgApp.hasError = true;
         }
@@ -131,7 +141,7 @@ window.addEventListener('load', function () {
     }
 
     // fixcode click
-    btnFixCode.onclick = function (e) {
+    btnFixCode.onclick = function(e) {
         e.preventDefault;
         fadeIn(terminalWin, 1000);
         resetAnimation(terminalWin, 'command');
@@ -160,6 +170,12 @@ window.addEventListener('load', function () {
 
         commands[2].innerHTML = 'Writing log... Done!';
         cursor.innerHTML = '_';
+    }
+
+    // Refresh click
+    btnRefresh.onclick = function(e) {
+        e.preventDefault;
+        location.reload();
     }
 
     // Attach events
