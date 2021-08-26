@@ -129,7 +129,7 @@ window.addEventListener('load', function () {
             log.innerHTML = 'Name: M Daniel Lana<br>' +
                 'Profession: Software Developer<br>' +
                 'Age: NAN! :-D<br>' +
-                'Phone: 54930641816<br>' +
+                'Phone: 54956198933<br>' +
                 'Email: mdlsis|gmail|com<br>' +
                 'Linkedin: https://www.linkedin.com/in/mdlana/<br>' +
                 'WebSite: https://www.mdlsis.com.ar/<br><br>';
