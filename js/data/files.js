@@ -18,6 +18,7 @@ export const PROFILE = {
             url: 'https://kuntay.cloud',
             tagline: 'Donde todo se conecta.',
             taglineEn: 'Where everything connects.',
+            summary: 'Modular SaaS platform to run your business from a single workspace.',
             file: 'projects/Kuntay.md',
         },
         {
@@ -25,6 +26,7 @@ export const PROFILE = {
             url: 'https://vitalinfo.app',
             tagline: 'Tu presión clara para vos y tu médico.',
             taglineEn: 'Your blood pressure, clear for you and your doctor.',
+            summary: 'Blood pressure log with proper averages and a clear report for your doctor.',
             file: 'projects/Vitalinfo.md',
         },
     ],
@@ -110,6 +112,31 @@ const KUNTAY_MD = `# Kuntay Platform
 > **Donde todo se conecta.**
 > *Where everything connects.*
 
+A modular SaaS platform to run your business from a single workspace:
+clients, catalog, quotations, documents, reports and more.
+
+## Modules
+
+- **Directory**: your client directory, connected to the rest of your operation
+- **Catalog**: products, prices and data ready for your sales processes
+- **Quotations**: create, send and track quotations from the same workspace
+
+## Platform capabilities
+
+- **Core**: granular access control with built-in roles and permissions
+- **Doc Engine**: professional documents with templates and your own branding
+- **Reports**: advanced reports built from sources, fields, filters and groupings
+- **Learning**: guided tours, a copilot that answers questions and a sandbox with simulated data
+- **Analytics**: know whether a quotation was opened, for how long, and what was decided
+- **Tax Engine**: define your taxes once and they apply to every document
+- **Connector**: emits and receives events to connect with other services
+
+## Philosophy
+
+- **Modular**: grow without changing platforms
+- **Isolated**: your workspace, your data, your instance
+- **Connected**: when you are ready, Kuntay connects more
+
 ## Links
 
 - Website: [kuntay.cloud](https://kuntay.cloud)
@@ -120,6 +147,32 @@ const VITALINFO_MD = `# Vitalinfo
 
 > **Tu presión clara para vos y tu médico.**
 > *Your blood pressure, clear for you and your doctor.*
+
+Log your blood pressure readings in seconds, see properly calculated
+averages and take your doctor a report they understand at a glance.
+Free, no ads, no app store.
+
+## How it works
+
+- **Measure as usual** with your arm cuff at home
+- **Log it your way**: type it, paste several readings or dictate them
+- **See your averages** and share them with your doctor
+
+## Features
+
+- **Proper averages**: every reading weighs the same in the daily average
+- **Alerts**: a reading above 180/120 is flagged on its own
+- **Time of day**: how your pressure behaves in the morning, afternoon and night
+- **Medication periods**: see your numbers for each treatment, without mixing them
+- **Truly large text**: one setting enlarges text, fields and buttons
+- **Installable web app**: from the browser, on your phone or computer
+- **Guidelines**: Argentine Hypertension Consensus 2025, AHA/ACC 2025 or ESH 2023
+
+## For your doctor
+
+A report that reads well during the appointment: averages, classification,
+trend and time-of-day patterns. Printed, or shared with a link that expires
+when you choose, with an optional PIN, where the doctor can leave a note.
 
 ## Links
 
