@@ -188,7 +188,7 @@ export class Terminal {
         add('projects', 'List my projects', async () => {
             this.printText('Projects', 't-bold');
             for (const p of profile.projects) {
-                await this.lines([[`  ${p.name}`, 't-accent'], `    ${p.tagline}  (${p.taglineEn})`, `    ${p.url}`], 40);
+                await this.lines([[`  ${p.name}`, 't-accent'], `    ${p.tagline}  (${p.taglineEn})`, `    ${p.summary}`, `    ${p.url}`], 40);
             }
             this.print(`  <span class="t-dim">Open the details:</span> ${this.#chips(profile.projects.map(p => `code ${p.file}`))}`);
         });

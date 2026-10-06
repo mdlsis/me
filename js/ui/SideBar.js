@@ -171,7 +171,7 @@ export class SideBar {
                 <span class="ext-logo ext-logo-project">${escapeHtml(p.name.slice(0, 1))}</span>
                 <span class="ext-info">
                     <span class="ext-name">${escapeHtml(p.name)}</span>
-                    <span class="ext-detail">${escapeHtml(p.taglineEn)}</span>
+                    <span class="ext-detail">${escapeHtml(p.summary)}</span>
                     <span class="ext-publisher">${escapeHtml(p.url.replace(/^https?:\/\//, ''))}</span>
                 </span>
             </button>`).join('');
