@@ -1,476 +1,171 @@
 <!doctype html>
-<html lang="es">
+<html lang="en" data-theme="mdl-dark">
 
 <head>
     <meta charset="UTF-8">
-    <link href="favicon.png" rel="shortcut icon">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MDL Contact Me!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>M Daniel Lana · Software Developer</title>
+    <meta name="description" content="M Daniel Lana, software developer. PHP, C#, Java, JavaScript and Flutter. Projects: Kuntay Platform and Vitalinfo.">
+    <meta name="author" content="M Daniel Lana">
+    <meta name="theme-color" content="#111317">
+    <link rel="canonical" href="https://mdlsis.github.io/me/">
+    <link rel="icon" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
 
-    <meta name="description" content="Software Developer" />
-    <meta property="og:locale" content="es_ES" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Software Developer" />
-    <meta property="og:description" content="Software Developer" />
-    <meta property="og:url" content="https://mdlsis.com.ar/" />
-    <meta property="og:site_name" content="MDLana" />
-    <meta property="og:image" content="https://mdlsis/headers-image.jpg" />
-    <meta property="og:image:secure_url" content="https://mdlsis/headers-image.jpg" />
-    <meta property="og:image:width" content="700" />
-    <meta property="og:image:height" content="394" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:description" content="Software Developer" />
-    <meta name="twitter:title" content="MDLana" />
-    <meta name="twitter:image" content="https://mdlsis/headers-image.jpg" />
-    <!-- <meta name="google-site-verification" content="my_google_code!" /> -->
-    <script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://mdlsis.com.ar/#website","url":"https://mdlsis.com.ar/","name":"MDLana","potentialAction":{"@type":"SearchAction","target":"https://mdlsis.com.ar/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"WebPage","@id":"https://mdlsis.com.ar/#webpage","url":"https://mdlsis.com.ar/","inLanguage":"es","name":"MDLana","isPartOf":{"@id":"https://mdlsis.com.ar/#website"},"datePublished":"2020-08-10T00:00:00+00:00","dateModified":"2020-08-10T00:00:00+00:00","description":"Software Developer"}]}</script>
-    <link rel='https://api.w.org/' href='https://mdlsis.com.ar/wp-json/' />
+    <!-- Open Graph / Twitter -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="M Daniel Lana">
+    <meta property="og:title" content="M Daniel Lana · Software Developer">
+    <meta property="og:description" content="Fix the bugs, run the program and get my contact info. A small VS Code simulation built with vanilla JavaScript.">
+    <meta property="og:url" content="https://mdlsis.github.io/me/">
+    <meta property="og:image" content="https://mdlsis.github.io/me/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="M Daniel Lana · Software Developer">
+    <meta name="twitter:description" content="Fix the bugs, run the program and get my contact info.">
+    <meta name="twitter:image" content="https://mdlsis.github.io/me/og-image.png">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "M Daniel Lana",
+        "jobTitle": "Software Developer",
+        "url": "https://mdlsis.github.io/me/",
+        "email": "mailto:info@mdlsis.com.ar",
+        "sameAs": [
+            "https://www.mdlsis.com.ar/",
+            "https://www.linkedin.com/in/mdlana/",
+            "https://github.com/mdlsis"
+        ],
+        "knowsAbout": ["PHP", "C#", "Java", "JavaScript", "Flutter"]
+    }
+    </script>
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/main.css">
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="style.css" />
-
-    <!-- Fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-    
-    <!-- popper -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js" integrity="sha512-7yA/d79yIhHPvcrSiB8S/7TyX0OxlccU8F/kuB8mHYjLlF1MInPbEohpoqfz0AILoq5hoD7lELZAYYHbyeEjag==" crossorigin="anonymous"></script>
-    
-    <!-- Bootstrap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js" integrity="sha512-8qmis31OQi6hIRgvkht0s6mCOittjMa9GMqtK9hes5iEQBQE/Ca6yGE5FsW36vyipGoWQswBj/QBm2JR086Rkw==" crossorigin="anonymous"></script>
-
+    <!-- Apply the saved theme before first paint -->
+    <script>
+        try {
+            var t = JSON.parse(localStorage.getItem('mdl.theme'));
+            if (t) document.documentElement.dataset.theme = t;
+        } catch (e) { /* storage unavailable */ }
+    </script>
+    <script type="module" src="js/app.js"></script>
 </head>
 
 <body>
+    <a class="skip-link" href="#editor">Skip to editor</a>
 
-    <div class="container-fluid main">
-
-        <header class="header sticky">
-            <div class="info-left">
-                <p>Hi! I'm</p>
-                <h1>M Daniel Lana</h1>
-                <p>Software Developer</p>
-            </div>
-
-            <div class="info-right">
-
-                <p>
-                    <a class="text-link-mail" href="mailto:info@mdlsis.com.ar">
-                        info<i class="fas fa-at"></i>mdlsis<sub><span class="dot"></span></sub>com.ar
-                    </a>
-                </p>
-
-                <p>
-                    <a class="text-link-web" href="https://www.mdlsis.com.ar" target="_blank">
-                        www<sub><span class="dot"></span></sub>mdlsis<sub><span class="dot"></span></sub>com<sub><span
-                                class="dot"></span></sub>ar
-                    </a>
-                </p>
-
-                <p>
-                    <a class="text-link-linkedin" href="https://ar.linkedin.com/in/mdlana" target="_blank">
-                        linkedin
-                    </a>
-                </p>
-
-            </div>
-
-            <div class="code-editor-menu">
-                <hr>
-                <nav>
-                    <span class="nav-menu-icon"><i class="fab fa-github fa-2x"></i></span>
-                    <ul class="nav-menu">
-                        <li>File</li>
-                        <li>Edit</li>
-                        <li>Selection</li>
-                        <li>View</li>
-                        <li>Go</li>
-                        <li>Run</li>
-                        <li>Terminal</li>
-                        <li>Help</li>
-                    </ul>
-                </nav>
-                <hr>
-            </div>
-
-            <div class="code-editor-tab">
-                <label>Program.cs <i class="fas fa-times tab-close"></i></label>
-            </div>
-        </header>
-        
-        <!-- The sidebar -->
-        <div class="sidenav">
-            <div class="icon-container">
-                <a><i class="fas fa-fw fa-search"></i></a>
-                <a><i class="fas fa-fw fa-code-branch"></i></a>
-                <a class="btnRunCode"><i class="fas fa-fw fa-play"></i>
-                    <span class="pulse-button"></span>
-                </a>
-                <a class="btnFixCode"><i class="fas fa-fw fa-bug"></i>
-                    <span class="pulse-button"></span>
-                </a>
-                <a><i class="far fa-fw fa-bookmark"></i></a>
-                <span class="last-two">
-                    <a><i class="far fa-fw fa-user-circle"></i></a>
-                    <a><i class="fas fa-fw fa-cog"></i></a>
-                </span>
-            </div>
+    <!-- Hero -->
+    <header class="hero">
+        <div class="hero-id">
+            <p class="hero-hi">Hi! I'm</p>
+            <h1 class="hero-name">M Daniel Lana</h1>
+            <p class="hero-role"><span class="hero-role-text">Software Developer</span><span class="hero-caret" aria-hidden="true">_</span></p>
         </div>
+        <nav class="hero-links" aria-label="Contact">
+            <a class="hero-link" data-contact="email" href="mailto:info@mdlsis.com.ar">
+                <span class="hero-link-icon" data-icon="mail"></span>
+                <span class="hero-link-text">info<span class="sep">@</span>mdlsis<span class="sep">.</span>com<span class="sep">.</span>ar</span>
+            </a>
+            <a class="hero-link" href="https://www.mdlsis.com.ar/" target="_blank" rel="noopener">
+                <span class="hero-link-icon" data-icon="globe"></span>
+                <span class="hero-link-text">www<span class="sep">.</span>mdlsis<span class="sep">.</span>com<span class="sep">.</span>ar</span>
+            </a>
+            <a class="hero-link" href="https://www.linkedin.com/in/mdlana/" target="_blank" rel="noopener">
+                <span class="hero-link-icon" data-icon="linkedin"></span>
+                <span class="hero-link-text">linkedin</span>
+            </a>
+            <a class="hero-link" href="https://github.com/mdlsis" target="_blank" rel="noopener">
+                <span class="hero-link-icon" data-icon="github"></span>
+                <span class="hero-link-text">github</span>
+            </a>
+        </nav>
+    </header>
 
-        <div class="container-editor">
-
-            <div class="code-editor block">
-                <!-- Comment lines-->
-                <hr>
-                <div class="code-part">
-                    <div class="line-number">1</div>
-                    <div class="expand"></div>
-                    <div class="comment">
-                        /// &lt;summary&gt;
-                    </div>
-                </div>
-
-                <div class="code-part">
-                    <div class="line-number">2</div>
-                    <div class="expand"></div>
-                    <div class="comment">
-                        /// Program.cs - A simple demo to share my contact information
-                    </div>
-                </div>
-
-                <div class="code-part">
-                    <div class="line-number">3</div>
-                    <div class="expand"></div>
-                    <div class="comment">
-                        /// &lt;/summary&gt;
-                    </div>
-                </div>
-
-                <!-- Terminal -->
-                <div class="window">
-                    <div class="window-bar">
-                        <div class="window-title">
-                            C:\Projects\bin\ConsoleApp.exe
-                        </div>
-                        <div class="window-menu">
-                            <div class="window-buttons window-minimize"><i class="far fa-window-minimize"></i></div>
-                            <div class="window-buttons window-maximize"><i class="far fa-window-maximize"></i></div>
-                            <div class="window-buttons window-close"><i class="fas fa-times"></i></div>
-                        </div>
-                    </div>
-                    <div class="terminal">
-                        <p class="command">Compiling C:\Projects\bin\ConsoleApp.exe...</p>
-                        <p class="log">
-                            <span>
-                                Line 5: 'Idle' object is deprecated!<br>
-                                Line 6: Invalid object. Unrecognized symbol.<br>
-                                Line 7: 'LazyLife' contain unsafe code.<br>
-                                2 errors and 1 warning<br>
-                                3 problems found!<br>
-                                Fixed (<i class="fas fa-bug"></i>) and Run (<i class="fas fa-play"></i>) application
-                                again...
-                            </span>
-                        </p>
-                        <p class="command">Writing log... Done!</p>
-                        <p class="command"><span class="cursor">_</span></p>
-                    </div>
-                </div>
-
-                <!-- Using -->
-                <div class="code-part">
-                    <div class="line-number">4</div>
-                    <div class="expand"></div>
-                    <div class="using">
-                        <span class="info">using</span> MyLife.Objectives.<span class="info-accent">BeHappy</span>;
-                        <span class="slash-comment">//</span>
-                    </div>
-                    <div class="ide-message-area">
-                        <label class="badge">2020</label>
-                        <span class="info">Info: </span>
-                        <span class="message">updated yesterday! 1 update pending...</span>
-                    </div>
-                </div>
-
-                <div class="code-part" data-line="5">
-                    <div class="line-number">5</div>
-                    <div class="expand"></div>
-                    <div class="using">
-                        <span class="info">using</span> MyLife.Rules.<span class="warning-accent strike">Idle</span>;
-                        <span class="slash-comment">//</span>
-                    </div>
-                    <div class="ide-message-area">
-                        <label class="badge">2019</label>
-                        <span class="warning">Warning: </span>
-                        <span class="message">deprecated and not recommended!</span>
-                    </div>
-                </div>
-
-                <div class="code-part" data-line="6">
-                    <div class="line-number">6</div>
-                    <div class="expand"></div>
-                    <div class="using">
-                        <span class="info">using</span> System.<span
-                            class="error-accent wavy">INeedToReflectOverMyFiaca</span>;
-                        <span class="slash-comment">//</span>
-                    </div>
-                    <div class="ide-message-area">
-                        <label class="badge">now</label>
-                        <span class="error">Error: </span>
-                        <span class="message">unrecognized object symbol</span>
-                    </div>
-                </div>
-
-                <div class="code-part" data-line="7">
-                    <div class="line-number">7</div>
-                    <div class="expand"></div>
-                    <div class="using">
-                        <span class="info">using</span> MDLSis.Core.<span
-                            class="warning-accent strike">LazyLife</span>;
-                        <span class="slash-comment">//</span>
-                    </div>
-                    <div class="ide-message-area">
-                        <label class="badge">now</label>
-                        <span class="warning">Warning: </span>
-                        <span class="message">Unsafe code. You need to refactor it.</span>
-                    </div>
-                </div>
-
-                <div class="code-part">
-                    <div class="line-number">8</div>
-                    <div class="expand"></div>
-                    <div class="using">
-                        <span class="info">using</span> System;
-                    </div>
-                </div>
-
-                <!-- Namespace -->
-                <div class="code-part">
-                    <div class="line-number">9</div>
-                    <div class="expand"></div>
-                    <div class="namespace">
-                        <span class="info">namespace</span> MDL.ContactMe <span class="key">{</span>
-                    </div>
-                </div>
-
-                <!-- Class Program -->
-                <div class="code-part">
-                    <div class="line-number">10</div>
-                    <div class="expand"></div>
-                    <div class="class">
-                        <span class="info">class </span> <span class="info-accent">Program</span> <span
-                            class="key">{</span>
-                    </div>
-                </div>
-
-                <!-- Main method -->
-                <div class="code-part">
-                    <div class="line-number">11</div>
-                    <div class="expand"></div>
-                    <div class="method">
-                        <span class="info">static void </span> Main(string[] args) <span class="key">{</span>
-                    </div>
-                </div>
-
-                <!-- User instance -->
-                <div class="code-part">
-                    <div class="line-number">12</div>
-                    <div class="expand"></div>
-                    <div class="code-i1">
-                        <span class="info">User </span> user = <span class="info">new</span>
-                        <span class="info-accent">User</span>(<span class="string">"M Daniel Lana"</span>,
-                        <span class="string">"Software Developer"</span>)
-                        <span class="key">{</span>
-                    </div>
-                </div>
-
-                <!-- Properties -->
-                <div class="code-part">
-                    <div class="line-number">13</div>
-                    <div class="expand"></div>
-                    <div class="code-i2">
-                        Dob = <span class="string">"1973/03/16"</span>,
-                    </div>
-                </div>
-
-                <div class="code-part">
-                    <div class="line-number">14</div>
-                    <div class="expand"></div>
-                    <div class="code-i2">
-                        WhatsApp = <span class="string">"54956198933"</span>,
-                    </div>
-                </div>
-
-                <div class="code-part">
-                    <div class="line-number">15</div>
-                    <div class="expand"></div>
-                    <div class="code-i2">
-                        Email = <span class="string">"info<small><i class="fas fa-at"></i>mdlsis</small><sub><span
-                                    class="dot"></span></sub>com.ar"</span>,
-                    </div>
-                </div>
-
-                <div class="code-part">
-                    <div class="line-number">16</div>
-                    <div class="expand"></div>
-                    <div class="code-i2">
-                        Linkedin = <span class="string-quote">&quot;</span><a
-                            href="https://www.linkedin.com/in/mdlana/"
-                            target="_blank">https://www.linkedin.com/in/mdlana/</a></span><span
-                            class="string-quote">&quot;</span>,
-                    </div>
-                </div>
-
-                <div class="code-part">
-                    <div class="line-number">17</div>
-                    <div class="expand"></div>
-                    <div class="code-i2">
-                        WebSite = <span class="string-quote">&quot;</span><a href="https://www.mdlsis.com.ar/"
-                            target="_blank">https://www.mdlsis.com.ar/</a></span><span
-                            class="string-quote">&quot;</span>;
-                    </div>
-                </div>
-
-                <!-- } -->
-                <div class="code-part">
-                    <div class="line-number">18</div>
-                    <div class="expand"></div>
-                    <div class="code-i1">
-                        <span class="info"> </span> <span class="key">};</span>
-                    </div>
-                </div>
-
-                <!-- user.PrintInfo() -->
-                <div class="code-part">
-                    <div class="line-number">19</div>
-                    <div class="expand"></div>
-                    <div class="code-i1">
-                        user.PrintInfo();
-                    </div>
-                </div>
-
-                <!-- Console.WriteLine() -->
-                <div class="code-part">
-                    <div class="line-number">20</div>
-                    <div class="expand"></div>
-                    <div class="code-i1">
-                        <span class="info-accent">Console</span>.WriteLine(<span class="string">"Press Enter Key to
-                            Exit..."</span>);
-                    </div>
-                </div>
-
-                <!-- Console.ReadLine() -->
-                <div class="code-part">
-                    <div class="line-number">21</div>
-                    <div class="expand"></div>
-                    <div class="code-i1">
-                        <span class="info-accent">Console</span>.ReadLine();
-                    </div>
-                </div>
-
-                <!-- } Method -->
-                <div class="code-part">
-                    <div class="line-number">22</div>
-                    <div class="expand"></div>
-                    <div class="method">
-                        <span class="key"></span>}</span>
-                    </div>
-                </div>
-
-                <!-- } Class -->
-                <div class="code-part">
-                    <div class="line-number">23</div>
-                    <div class="expand"></div>
-                    <div class="class">
-                        <span class="key"></span>}</span>
-                    </div>
-                </div>
-
-                <!-- Class User -->
-                <div class="code-part">
-                    <div class="line-number">24</div>
-                    <div class="expand">></div>
-                    <span class="expand-select">
-                        <div class="class">
-                            <span class="info">public class </span> <span class="info-accent">User</span><span
-                                class="more-box">...</span>
-                        </div>
-                    </span>
-                </div>
-
-                <!-- Class DateUtils -->
-                <div class="code-part">
-                    <div class="line-number">35</div>
-                    <div class="expand">></div>
-                    <span class="expand-select">
-                        <div class="class">
-                            <span class="info">public static class </span> <span
-                                class="info-accent">DateUtils</span><span class="more-box">...</span>
-                        </div>
-                    </span>
-                </div>
-
-                <!-- } Namespace -->
-                <div class="code-part">
-                    <div class="line-number">47</div>
-                    <div class="expand"></div>
-                    <div class="namespace">
-                        <span class="key">}</span>
-                    </div>
-                </div>
-
-                <!-- Blank lines -->
-                <div class="code-part">
-                    <div class="line-number">48</div>
-                    <div class="expand"></div>
-                    <div class="namespace"></div>
-                </div>
-
-                <div class="code-part">
-                    <div class="line-number">49</div>
-                    <div class="expand"></div>
-                    <div class="namespace"></div>
-                </div>
-
-            </div>
-
-        </div>
-
-        <footer class="footer">
-            <hr>
-            <div class="code-editor-statusbar">
-                <span>
-                    <ul class="statusbar-right">
-                        <li><i class="fas fa-satellite-dish"></i></li>
-                        <li><i class="far fa-comment-dots"></i></li>
-                        <li><i class="far fa-bell"></i></li>
-                    </ul>
-                </span>
-                <ul class="statusbar-left">
-                    <li class="sb-git"><i class="fas fa-code-branch"></i>&nbsp;gh-pages<sup>*</sup><small>+</small></li>
-                    <li class="sb-refresh btnRefresh"><i class="fas fa-sync-alt"></i></li>
-                    <li class="sb-stats"><i class="fas fa-times-circle"></i>&nbsp;<span class="sb-stats-errors">0</span>&nbsp;<i
-                            class="fas fa-exclamation-triangle"></i>&nbsp;<span class="sb-stats-warnings">0</span></li>
-                    <li class="sb-action"><i class="fas fa-bolt"></i>&nbsp;Compiling...<span class="sb-action-percent"></span></li>
-                </ul>
-            </div>
-            <!-- Compiling -->
-            <div class="progress-bar"></div>
-        </footer>
-
+    <!-- Title bar: menu + command center -->
+    <div class="titlebar">
+        <a class="titlebar-logo" href="https://github.com/mdlsis/me" target="_blank" rel="noopener" aria-label="Source code on GitHub" data-icon="github"></a>
+        <button class="titlebar-burger" type="button" aria-label="Application menu" data-icon="menu"></button>
+        <nav class="menubar" aria-label="Application menu"></nav>
+        <button class="command-center" type="button" aria-label="Search files and commands">
+            <span data-icon="search"></span>
+            <span class="command-center-label">me</span>
+        </button>
+        <div class="titlebar-spacer"></div>
     </div>
 
-    <script src="main.js"></script>
+    <!-- Workbench -->
+    <div class="workbench">
+        <nav class="activitybar" aria-label="Activity bar"></nav>
 
+        <aside class="sidebar" aria-label="Side bar"></aside>
+        <div class="sidebar-backdrop"></div>
+
+        <main class="main-area">
+            <div class="editor-group">
+                <div class="tabs-row">
+                    <div class="tabs" role="tablist" aria-label="Open editors"></div>
+                    <div class="editor-actions"></div>
+                </div>
+                <div class="breadcrumbs"></div>
+                <div class="editor-progress"><div class="editor-progress-bar"></div></div>
+                <div class="editor-body">
+                    <div class="editor" id="editor" tabindex="0" aria-label="Code editor"></div>
+                    <div class="preview" hidden></div>
+                    <div class="minimap" aria-hidden="true">
+                        <canvas></canvas>
+                        <div class="minimap-slider"></div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="panel" aria-label="Panel">
+                <div class="panel-sash" title="Drag to resize"></div>
+                <div class="panel-header">
+                    <div class="panel-tabs" role="tablist">
+                        <button type="button" class="panel-tab" data-view="problems" role="tab">Problems <span class="panel-badge" hidden>0</span></button>
+                        <button type="button" class="panel-tab" data-view="output" role="tab">Output</button>
+                        <button type="button" class="panel-tab" data-view="terminal" role="tab">Terminal</button>
+                    </div>
+                    <div class="panel-actions">
+                        <button type="button" class="icon-btn panel-clear" aria-label="Clear terminal" data-icon="trash"></button>
+                        <button type="button" class="icon-btn panel-max" aria-label="Maximize panel" data-icon="chevronUp"></button>
+                        <button type="button" class="icon-btn panel-close" aria-label="Close panel" data-icon="close"></button>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="panel-view problems-view" data-view="problems"></div>
+                    <div class="panel-view output-view" data-view="output"></div>
+                    <div class="panel-view terminal-view" data-view="terminal"></div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="statusbar" aria-label="Status bar"></footer>
+
+    <div class="quick-input" hidden></div>
+    <div class="hover-widget" hidden></div>
+    <div class="context-menu" hidden></div>
+    <div class="notifications" aria-live="polite"></div>
+
+    <noscript>
+        <div class="noscript">
+            <p>This page is an interactive VS Code simulation and needs JavaScript.</p>
+            <p>Contact: <a href="mailto:info@mdlsis.com.ar">info@mdlsis.com.ar</a> ·
+                <a href="https://www.linkedin.com/in/mdlana/">LinkedIn</a> ·
+                <a href="https://github.com/mdlsis">GitHub</a></p>
+        </div>
+    </noscript>
 </body>
 
 </html>
